@@ -12,13 +12,8 @@
 </head>
 <body>
 
-    <!-- Background Effects -->
-    <div class="bg-effects">
-        <div class="bg-orb bg-orb-1"></div>
-        <div class="bg-orb bg-orb-2"></div>
-        <div class="bg-orb bg-orb-3"></div>
-    </div>
-    <div class="bg-grid"></div>
+    <!-- Background -->
+    <canvas id="bgCanvas"></canvas>
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
@@ -95,14 +90,12 @@
                     <div class="about-card reveal">
                         <ul class="about-info-list">
                             <li class="about-info-item">
-                                <div class="about-info-icon icon-accent"></div>
                                 <div class="about-info-content">
                                     <div class="about-info-label">ชื่อ - นามสกุล</div>
                                     <div class="about-info-value">นาย ชนะ ธรรมชาติ</div>
                                 </div>
                             </li>
                             <li class="about-info-item">
-                                <div class="about-info-icon icon-pink"></div>
                                 <div class="about-info-content">
                                     <div class="about-info-label">อีเมล</div>
                                     <div class="about-info-value">
@@ -111,14 +104,12 @@
                                 </div>
                             </li>
                             <li class="about-info-item">
-                                <div class="about-info-icon icon-teal"></div>
                                 <div class="about-info-content">
                                     <div class="about-info-label">ที่อยู่</div>
                                     <div class="about-info-value">99/967 หน้าซอย66 หมู่3 บ้านพฤกษา1 คลอง8 ตำบลลำผักกูด อำเภอธัญบุรี จังหวัดปทุมธานี 12110</div>
                                 </div>
                             </li>
                             <li class="about-info-item">
-                                <div class="about-info-icon icon-amber"></div>
                                 <div class="about-info-content">
                                     <div class="about-info-label">สถานะ</div>
                                     <div class="about-info-value">นักศึกษา มหาวิทยาลัยกรุงเทพ</div>
@@ -214,7 +205,7 @@
                 <div class="projects-grid">
                     <div class="project-card reveal">
                         <div class="project-thumbnail">
-                            <img src="Project pic/travel_ranking.webp" alt="Travel Ranking">
+                            <img src="Project pic/travel_ranking.jpg" alt="Travel Ranking">
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Web Application</span>
@@ -235,7 +226,7 @@
 
                     <div class="project-card reveal">
                         <div class="project-thumbnail">
-                            <img src="Project pic/it_support.webp" alt="IT Support Ticket">
+                            <img src="Project pic/it_support.jpg" alt="IT Support Ticket">
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Web Application</span>
@@ -310,7 +301,6 @@
                 <div class="contact-grid">
                     <div class="contact-info-cards reveal">
                         <a href="mailto:thammachatchana@gmail.com" class="contact-card" id="contact-email">
-                            <div class="contact-card-icon icon-pink"></div>
                             <div>
                                 <div class="contact-card-label">อีเมล</div>
                                 <div class="contact-card-value">thammachatchana@gmail.com</div>
@@ -318,7 +308,6 @@
                         </a>
 
                         <div class="contact-card" id="contact-address">
-                            <div class="contact-card-icon icon-teal"></div>
                             <div>
                                 <div class="contact-card-label">ที่อยู่</div>
                                 <div class="contact-card-value">99/967 หน้าซอย66 หมู่3 บ้านพฤกษา1 คลอง8<br>ต.ลำผักกูด อ.ธัญบุรี จ.ปทุมธานี 12110</div>
@@ -326,7 +315,6 @@
                         </div>
 
                         <div class="contact-card" id="contact-university">
-                            <div class="contact-card-icon icon-amber"></div>
                             <div>
                                 <div class="contact-card-label">มหาวิทยาลัย</div>
                                 <div class="contact-card-value">มหาวิทยาลัยกรุงเทพ</div>
