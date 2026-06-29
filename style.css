@@ -785,6 +785,11 @@ section {
     border-radius: var(--radius);
     overflow: hidden;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
 }
 
 .cert-card:hover {
